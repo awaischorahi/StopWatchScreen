@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AAFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bgcircle"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:src="@drawable/icanchor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/needle"
+        android:layout_height="250dp"/>
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        android:id="@+id/chronometer"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/start"
+        android:layout_width="200dp"
+        android:layout_above="@id/stop"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgbutton"
+        android:text="start"/>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/stop"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:layout_margin="2dp"
+        android:background="@drawable/bgbutton"
+        android:layout_above="@+id/spaceView"/>
+    <Space
+        android:id="@+id/spaceView"
+        android:layout_width="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="100dp"/>
+</RelativeLayout>
+
+</LinearLayout>
